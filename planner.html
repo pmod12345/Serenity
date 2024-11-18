@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planner</title>
+        <link rel="stylesheet" href="planner.css">
+    </head>
+
+
+    <nav class="navBar">
+        <a href="home.html"><img src="logo.jpeg"></a>
+        <a href="January.html">Calendar</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="planner.html">Planner</a>
+        <a href="info.html">Information</a>
+        <a id="signUp"href="signUp.html">Sign up</a>
+        <a id="logIn.html" href="logIn.html">Log in</a>
+    </nav>
+   
+    <body>
+        <p class="instructions"><a href="home.html">Need help? Click this to see instructions on arena rental</a></p>
+        <div class="formContainter">
+            <form action="bookSuccess.html">
+                <h1 class="heading">Reserve Your Space</h1>
+
+
+            <div class="formField">
+                <p>Full Name:</p>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="formField">
+                <p>Email:</p>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="formField">
+                <p>Event Date:</p>
+                <input type="date" required>
+            </div>
+            <div class="formField">
+                <p>Time:</p>
+                <input type="time">
+            </div>
+            <div class="formField">
+                <p>Number of Hosts</p>
+                <select name="select" id="select">
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                    <option value="7">7 people</option>
+                    <option value="8">8 people</option>
+                    <option value="9">9 people</option>
+                </select>
+            </div>
+            <div class="formField">
+                <p>Number of People Invited:</p>
+                <input type="number" required>
+            </div>
+            <p align="center">
+            <button class="btn" type="submit" href="home.html">Book</button>
+            </p>
+        </form>
+        </div>
+    </body>
+</html>

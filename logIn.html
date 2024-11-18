@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="logIn.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<nav class="navBar">
+    <a href="home.html"><img src="logo.jpeg"></a>
+    <a href="January.html">Calendar</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="planner.html">Planner</a>
+    <a href="info.html">Information</a>
+    <a id="signUp"href="signUp.html">Sign up</a>
+    <a id="logIn.html" href="logIn.html">Log in</a>
+</nav>
+<body>
+    <div class="wrapper">
+        <form action="loginSuccess.html">
+            <h1>Login</h1>
+            <div class="inputBox">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock' ></i>
+            </div>
+            <div class="rememberBox">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="registerLink">
+                <p>Don't have an account? <a href="signUp.html">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+</body>

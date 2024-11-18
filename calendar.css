@@ -1,0 +1,156 @@
+
+html{
+    background: hsl(120, 55%, 78%);
+}
+.navBar{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background: navy;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navBar img{
+    height: 45px;
+}
+.navBar a{
+    color: white;
+    text-decoration: none;
+    font-family: Impact;
+}
+.navBar a:hover{
+    color: #8265A7;
+}
+.calendar{
+    margin: auto;
+    max-width: 800px;
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+    padding: 100px;
+}
+
+.month{
+    text-align: center;
+    background: navy;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: black;
+    border: 2px solid black;
+    font-family:'Courier New', Courier, monospace; 
+    color: white;   
+}
+table, th, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 27px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: -1.5px 1.5px 0px orange;
+    -webkit-text-stroke: .3px navy;
+}
+th{
+    background: orange;
+    text-shadow: -1.5px 1.5px 0px navy;
+    -webkit-text-stroke: .3px black;
+}
+td{
+    background-color: white;
+    color: black;
+}
+td:hover{
+    background: green;
+    color: white;
+}
+#nextMonth{
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    left: 80%;
+    top: 30%;
+    position: absolute;
+}
+#previousMonth{
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    right: 80%;
+    top: 30%;
+    position: absolute;
+}
+.cardContainer{
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 80px;
+}
+.card{
+    width: 325px;
+    background-color:white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px orange;
+    margin: 20px;
+    transition: transform 0.6s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cardContent{
+    padding: 20px;
+}
+.cardContent h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.cardContent p{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px;
+}
+.cardButton{
+    display: inline-block;
+    background-color:orange;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    justify-content: center;
+}
+.cardButton:hover{
+    background-color: black;
+    color:orange;
+    scale: 1.2;
+}
+.moreButton {
+    display: flex;
+    text-align: center;
+    width: 100px;
+}
+section h1{
+    color: black;
+    text-shadow: -2px 2px 0px orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}

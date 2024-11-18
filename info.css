@@ -1,0 +1,175 @@
+.navBar{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background: navy;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navBar img{
+    height: 45px;
+}
+.navBar a{
+    color: white;
+    text-decoration: none;
+    font-family: Impact;
+}
+.navBar a:hover{
+    color: #8265A7;
+}
+.policies{
+    padding: 50px;
+    background-color:lightgray;
+    width: 100%;
+}
+.policies a{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.policies a:hover{
+    background-color: orange;
+    color: black;
+    scale: 2;
+}
+.policies li{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.policies p{
+    font-size: 25px;
+}
+.policies h1{
+    color: black;
+    text-shadow: -2px 2px 0px orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+.directions{
+    padding: 50px;
+    background-color:azure;
+    width: 100%;
+    animation: appear linear;
+    justify-content: center ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.directions .location{
+    color: navy;
+}
+.directions h1{
+    color: black;
+    text-shadow: -2px 2px 0px orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+.directions p{
+    font-size: 25px;
+}
+.directions img{
+    height: 600px;
+    border-radius:30px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.directions p{
+    padding-right:300px;
+    padding-left: 10px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    text-align: center;
+}
+.seatingChart h1{
+    color: black;
+    text-shadow: -2px 2px 0px orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+.seatingChart img{
+    width: 900px;
+    border-radius: 30px;
+}
+.seatingChart p{
+    font-size: 20px;
+    padding: 50px;
+}
+.seatingChart{
+    padding: 50px;
+    background-color: lightblue;
+}
+@keyframes appear{
+    from{
+        opacity:0;
+        transform: translateX(-80px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+footer{
+    background-color:black;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+    justify-content: center;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #44318D;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: black;
+    transition: 0.7s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3 em;
+    opacity: 0.7;
+    transition: 0.5s;
+    text-align: center;
+}
+.footerNav ul li a:hover{
+    opacity: 1; 
+}
+.footerBottom{
+    background-color:black;
+}
